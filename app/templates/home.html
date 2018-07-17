@@ -1,1 +1,24 @@
-<h1>Home Page</h1>
+<section class="sidebar">
+    <h1>Indie Chat</h1>
+    <div ng-controller="HomeCtrl as home">
+        <p class="newroom" ng-click="home.open()">New Room<p>
+    </div>
+    <div ng-repeat="room in home.rooms">
+        <h3 class="room" ng-click="home.setActiveRoom(room)">{{ room.$value }}</h3>
+    </div>
+    <h3> {{ currentUser }}</h3>
+</section>
+
+<section class="chatbar">
+    <form name="form" id="form">
+        Message: <input type="message" id="msg" ng-model="home.message"></input>
+        <button class="submit-button" id="submit" ng-model="message" ng-click="home.submitMessage(home.message)">Submit</button>
+    </form>
+</section>
+
+<section class="chatroom">
+    <h2>{{ home.activeRoom.$value }}</h2>
+    <div ng-repeat="message in home.messages">
+        <h3>{{ home.user }} {{ ":" }} {{ message.content }}</h3>
+    </div>
+</section>

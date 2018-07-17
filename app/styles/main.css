@@ -1,0 +1,123 @@
+.fade.in {
+  opacity: 1;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.modal-backdrop .fade .in {
+  opacity: 0.5 !important;
+}
+
+
+.modal-backdrop.fade {
+    opacity: 0.5 !important;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+input {
+    height: 25%;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 110%;
+}
+
+.chatbar {
+    position: fixed;
+    display: block;
+    left: 350px;
+    font-size: 150%;
+    bottom: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 70%;
+}
+
+.chatroom {
+    position: fixed;
+    display: inline-block;
+    top: 10px;
+
+}
+
+.newroom {
+    background-color: white;
+    position: fixed;
+    left: 210px;
+    top: 8px;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 140%;
+
+}
+
+.newroom:hover {
+    cursor: pointer;
+}
+
+.sidebar {
+
+    background-color: rgba(26, 68, 95, 0.4);
+    display: inline-block;
+    height: 100%;
+    width: 350px;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+.modal-view {
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-view input {
+    width: 30%;
+}
+
+.cancel {
+    margin: 8px;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+.create {
+    margin: 8px;
+    background-color: rgba(26, 68, 95, 0.4);
+    border: none;
+    border-radius: 5px;
+}
+
+.create:hover {
+    cursor: pointer;
+}
+
+.cancel:hover {
+    cursor: pointer;
+}
+
+.room:hover {
+    cursor: pointer;
+}
+
+.submit-button {
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
